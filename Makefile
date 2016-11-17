@@ -3,7 +3,7 @@
 dist: clean shellcheck
 	mkdir dist
 	cp -rp buildbox.sh dist
-	rsync -av --exclude=prepared modules di
+	rsync -av --exclude=prepared modules dist
 
 buildbox.sh: src/*.sh
 	echo '#!/usr/bin/env bash' > buildbox.sh
