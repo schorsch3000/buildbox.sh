@@ -18,4 +18,3 @@ shellcheck: buildbox.sh
 	shellcheck buildbox.sh
 	find modules -name "*.sh" -exec shellcheck "{}" \;
 
-st
